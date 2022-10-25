@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>이미지 사이즈 width x height</h2>
+    <p>
+        가로길이가 0~360 이하면 small 출력<br>
+        가로길이가 361~750 이하면 midium 출력<br>
+        가로길이가 751~1200 이하면 big 출력<br>
+        <br>조건 : 최대 크기는 1200이다.
+    </p>
+    <hr>
+    <p>이미지의 크기는 ?이면</p>
+    <p>이미지의 분류는 <span id="demo">?</span></p>
+    <script>
+        img_width = 850; /* 여기 입력 */
+        img_gubun = null;
+        if (img_width<=360) {
+            size= 'small';
+        }else if (img_width<=750) {
+            size= 'midium';
+        }else if (img_width<=1200) {
+            size= 'big';
+        }else{
+            img_gubun ='unknown'
+        }
+            document.getElementById("demo").innerText=size;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>점수따라서 성적구분(A, B, C, D)</h2>
+    <p>점수가 90이상 A</p>
+    <p>점수가 80이상 B</p>
+    <p>점수가 70이상 C</p>
+    <p>나머지는 D</p>
+    <hr>
+    <p>김건우의 영어점수는 <span id="eng"></span>점이면</p>
+    <p>김건우의 영어성적은 <span id="res">?</span></p>
+    <script>
+        eng_kim = 80; /* 여기 입력 */
+        document.getElementById("eng").innerText=eng_kim;
+        grade=null;
+        if (eng_kim>=90){
+            grade = 'A';
+        }else if (eng_kim>=90) {
+            grade = 'B';
+        }else if (eng_kim>=70) {
+            grade = 'C';
+        }else{
+            grade = 'D';
+        } 
+        document.getElementById("res").innerText=grade;
+    </script>
+</body>
+</html>
