@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>선택한 메뉴의 이미지를 출력하라</h2>
+    <!-- 
+    <img src="images/156321c9-1cfd-430a-934f-3da472e6e56c.png" alt="" srcset="">
+    <img src="images/1892da6a-d80b-480f-801a-0ee83c8698aa.png" alt="">
+    <img src="images/5b5ff442-0245-4c0a-b386-33744ff82090.png" alt=""> -->
+
+    <script>
+        mysel = prompt("메뉴를 고르시오(a=와퍼, b=치킨, c=새우)");
+
+        switch (mysel) {
+
+            case 'a':
+                document.write("    <img src='images/156321c9-1cfd-430a-934f-3da472e6e56c.png' alt='' srcset=''>")
+                break;
+
+            case 'b':
+                document.write("    <img src='images/1892da6a-d80b-480f-801a-0ee83c8698aa.png' alt=''>")
+                break;
+            case 'c':
+
+                document.write("<img src='images/5b5ff442-0245-4c0a-b386-33744ff82090.png' alt=''>"
+                )
+                break;
+
+
+            default:
+                break;
+
+        }
+    </script>
+
+</body>
+
+</html>

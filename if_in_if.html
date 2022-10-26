@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>로그인 페이지</h2>
+    <p>id와 pw를 입력해서 조건비교를 과정</p>
+    <form action="">
+        <p>
+            <input type="text" id="userid" name="" value=""
+            placeholder="아이디입력">
+        </p>
+        <p>
+            <input type="password" id="userpw" name="" value=""
+            placeholder="비밀번호입력">
+        </p>
+        <p>
+            <input type="button" value="로그인확인" onclick="login();">
+        </p>
+    </form>
+    <script>
+
+        function login(){
+            myid = document.getElementById("userid").value; //kimcook
+        mypw = document.getElementById("userpw").value; //k1234
+
+        if (myid == 'kimcook'){ // if( myid == 'kimcook' && mypw == 'k1234') <-이방법도 결과 같음!
+            if(mypw=='k1234'){
+                alert("로그인 성공 메인페이지로 이동합니다")
+            }else{
+                alert("비밀번호를 확인하세요!")
+            }
+        }else{
+            alert("아이디를 확인하세요!")
+        }
+    }
+        
+       
+    </script>
+</body>
+</html>
